@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="comprobar.js"> </script>
+
+  </head>
+  <body>
+
+    <style media="screen">
+      body{
+        background-color:#C0C0C0;
+      }
+    h3 {
+          font-family: fantasy;
+          font-size: 30px ;
+          color:red;
+        }
+    </style>
+
+<a href="listadoUsuarios.php">Listado de Usuarios</a><br>
+<h3>Insertar Usuario</h3>
+
+<form class="" action="insertarUusuario.php" method="post" onsubmit="validar()">
+<label for="Nombre">Nombre: </label>  <input type="text" name="nombre" id="nombre" value="" onFocus="this.value=''"><br>
+<label for="Apellidos">Apellidos: </label>  <input type="text" name="apellidos" id="apellidos" value="" onFocus="this.value=''"><br>
+<label for="edad">Edad: </label>  <input type="text" name="edad" id="edad" value="" onFocus="this.value=''"><br>
+<label for="curso">Curso: </label>  <input type="text" name="curso" id="curso" value="" onFocus="this.value=''"><br>
+
+<input type="submit" onclick="validar" name="Insertar" value="Insertar" class="boton">
+</form>
+</section>
+
+<h3>Borrar Usuario</h3>
+
+<form class="" action="borrarUsuarios.php" method="post" onsubmit="seguro()">
+  <label for="id">Id: </label> <input type="text" name="id" id="miCampo" value="" onFocus="this.value=''"><br>
+  <br>
+  <input type="submit"  name="Borrar" value="Borrar"  class="boton">
+</form>
+</section>
+
+<h3>Actualizar Usuario</h3>
+
+<form class="" action="actualizarUsuarios.php" method="post" onsubmit="validar2()">
+<label for="id">Id: </label>  <input type="text" name="id" id="id" value="" onFocus="this.value=''"><br>
+<label for="nombre">Nombre: </label>  <input type="text" name="nombre" id="nombre2" value="" onFocus="this.value=''"><br>
+<label for="apellidos">Apellidos: </label>  <input type="text" name="apellidos" id="apellidos2" value="" onFocus="this.value=''"><br>
+<label for="edad">Edad: </label>  <input type="text" name="edad" id="edad2" value="" onFocus="this.value=''"><br>
+<label for="curso">Curso: </label>  <input type="text" name="curso" id="curso2" value="" onFocus="this.value=''"><br>
+  <br>
+<input type="submit" name="Actualizar"  value="Actualizar"  class="boton">
+</form>
+  </body>
+</html>
